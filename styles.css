@@ -1,0 +1,279 @@
+body {
+  background-color: aliceblue;
+  color: rgb(24, 23, 23) ;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Courier New', Courier, monospace;
+ 
+  /*font: normal 16px 'Courier New', Courier, monospace; */
+}
+
+.avatar {
+  border-style: solid;
+  border-color: #cbe908;
+  width: 250px;  /* ширина */ 
+  border-radius: 200px;   /* радиус границы */
+  box-shadow: 2px 2px 2px rgb(230, 233, 233);
+}
+
+h1 {
+  color: midnightblue grey	 ;
+}
+
+/* Информация которая снизу Азиз Сатторов.*/
+.info p {
+  color: rgb(32, 28, 56);
+  margin: ;  /*поле*/
+  font-style: oblique; /*размер шрифта*/
+  font-weight: bolder;
+  text-decoration: none;
+  
+  /* Это касаемо текста под Азиз Сатторов */
+  /* text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 42px; */
+}
+
+
+@media (max-width: 700px) {
+  .info {
+    text-align: center;
+    display: block;
+  }
+}
+
+
+/* Цвет ссылок */
+a{
+  color: orangered;
+  text-decoration: none;
+}
+
+/* Когда наводим мышку, она подчеркивается */
+a:hover {      
+  text-decoration: line-through ;
+}
+
+/*Светится при удерживании*/
+a:active{
+  color: orange;
+}
+
+/* Это касается социальных сетей, точнее присвечивается синим цветом посещаемая сеть. */
+a:visited {
+  color:red;
+}
+
+
+
+
+
+/* Box model страница по центру!*/
+.container{
+  max-width: 750px;
+  margin: auto;
+}
+
+/*Это касается 3х цветных карточек*/
+.card {
+  padding: 15px 20px;
+  /* background: orange; */
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+
+
+.bg-yellow {
+  background: #cbe908;
+}
+
+.bg-green {
+  background: #adff2f;
+}
+
+.bg-aliceblue {
+  background: aliceblue;
+}
+
+
+/* .button {
+  padding: 5px 3px;
+  background-color: #0dd932;
+  color: rgb(2, 6, 3);
+  border-color: rgb(18, 222, 52);
+  font-weight: bold;
+} */
+
+.h4 {
+  color: black  darkblue;
+  font-size: x-large;
+}
+
+
+
+/* 2НОВЫЙ (стилизация списка хобби) */
+
+/* hobby */
+/* Здесь мы выроняем карточку Хобби. (on video работается с той диаграммой) */
+.list {
+  padding: 0 20px;
+  /* list-style: none; можно убрать нумерацию или же поменять ее на другую */
+}
+
+.list li{
+  color: rgb(2, 14, 14);
+  margin-bottom: 10px; -меняются отступы между хобби
+}
+
+/* Минимальный отступ для всех слов*/
+/* *{
+  padding: 0;
+  margin: 0;
+} */
+
+
+
+
+/* Work skills*/
+/* 1. на <table>  делаем <table class="table">  */
+
+.table {
+  width: 100%;
+}
+
+/* 2. Удаляеться <th> и применяются изменения */
+
+.table td{
+  padding-bottom: 10px;
+}
+
+/* Закрашиваем 2х последних колонок (job title and year) */
+.table td:nth-child(2),
+.table td:nth-child(3){
+  color: darkslategrey;
+}
+
+
+
+
+
+/* 3НОВЫЙ (стилизация форм) */
+/*Contact with me*/
+/* 1.Открываем class="contact" */
+.contact h2 {
+  text-align: center;
+}
+
+/* 2.<form> открываем <div class="form-group + удаляем <br>" */
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #86898f;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  /* background: transparent; */
+  border-radius: 100px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+  padding: 15px 0 10px;
+  outline: none;
+  font-family: inherit;
+
+}
+
+
+
+.btn {
+  background: #111;
+  padding: 15px 20px;
+  color: #fff;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: 10%;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+
+/* 4НОВЫЙ (позиционирование в css) */
+
+/* Position */
+
+/* .position {
+  position: relative;
+  border: 4px solid black;
+  margin-top: 40px;
+  padding: 20px;
+  height: 300px;
+}
+
+.box {
+  position: fixed;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 50px;
+  background: lightcoral; 
+} */
+
+
+/* Теперь переходим к инфо точнее ниже его @media и т.д(Это для версий для телефона)*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .social {
+    background: darkgray;
+    padding: 15px;
+    margin: 20px ;
+
+    border: 5px solid grey;
+    border-bottom-style: double;
+    border-top-style: double;
+    border-right-color: dimgray;
+    border-left-color: dimgray;
+    border-left-width: 13px;
+} */
+
+
+/* .box-model > div{
+  float: left;
+  background: gainsboro ;
+  height: 200px;
+  border: 4px solid grey;
+  width: 25%;
+  box-sizing: border-box;
+} */
+
+
+/* Вот так можно сразу сделать оранжевыми */
+/* .card {
+  padding: 15px 20px;
+  background: orange;
+  margin-bottom: 20px;
+  border-radius: 20px;
+} */
